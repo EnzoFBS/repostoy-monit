@@ -38,10 +38,7 @@ echo \"Para prosseguirmos com a instalacao sera necessario instalar o java 11, p
 read inst1
 if [ \"$inst1\" == \"s\" ]
 then
-sudo apt install default-jdk -y
-clear
-echo \"JAVA instalado na versao 11\"
-sleep 5
+sudo apt insd
 else echo \"você escolheu não instalar\"
 break
 fi

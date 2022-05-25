@@ -201,9 +201,9 @@ public class Cadastro extends javax.swing.JFrame {
                 }
 
                 System.out.println("Login efetuado com sucesso !");
-           Log alertaLog = new Log();
+           //Log alertaLog = new Log();
         
-           alertaLog.logar("Login efetuado com sucesso ! ");
+         //  alertaLog.logar("Login efetuado com sucesso ! ");
 
 
                 try {

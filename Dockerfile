@@ -3,6 +3,5 @@ FROM mysql:5.7
 ENV MYSQL_DATABASE monitotem
 ENV MYSQL_ROOT_PASSWORD mysqldb
 
-WORKDIR /banco-mysql
-COPY ./script_sql.sql/ .
+COPY ./scripts.sql/ /docker-entrypoint-initdb.d/
 EXPOSE 3306

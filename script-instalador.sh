@@ -62,6 +62,7 @@ sudo docker build -t banco_img/banco-mysql:1.0 .
 sudo docker run -d -p 3306:3306 --name java-monitotem jar_monitotem:1.0
 
 
+
 sudo docker ps -a
 
 

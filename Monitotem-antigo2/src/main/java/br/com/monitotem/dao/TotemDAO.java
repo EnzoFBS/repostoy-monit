@@ -202,7 +202,7 @@ public class TotemDAO {
                         }
                     }
                 } catch (Exception e) {
-                    System.out.println("Nao envia");
+                    System.out.println("Nao envia" + e.getMessage());
                     System.out.println(e.getMessage());
                 }
 

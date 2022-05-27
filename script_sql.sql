@@ -19,7 +19,5 @@ create table if not exists registro(
     usoMemoria decimal(10,2) not null,
     usoCpu decimal(10,2) not null,
     tempoAtividade varchar(45) not null,
-    statusRegistro varchar(45),
-    dataRegistro datetime,
-    memoriaTotal decimal(10,2)
+    dataRegistro datetime
 );

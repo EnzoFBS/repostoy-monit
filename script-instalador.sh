@@ -38,7 +38,7 @@ echo \"Para prosseguirmos com a instalacao sera necessario instalar o java 11, p
 read inst1
 if [ \"$inst1\" == \"s\" ]
 then
-sudo apt insd
+sudo apt install default-jdk
 else echo \"você escolheu não instalar\"
 break
 fi
@@ -60,7 +60,6 @@ sudo docker pull mysql:5.7
 sudo docker build -t jar_monitotem:1.0 .
 sudo docker build -t banco_img/banco-mysql:1.0 .
 sudo docker run -d -p 3306:3306 --name java-monitotem jar_monitotem:1.0
-
 
 
 sudo docker ps -a

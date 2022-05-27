@@ -16,8 +16,10 @@ create table if not exists totem(
 
 create table if not exists registro(
 	idRegistro int primary key auto_increment,
-    usoMemoria varchar(45),
-    usoCpu varchar(45),
-    tempoAtividade varchar(45),
-    dataRegistro datetime
+    usoMemoria decimal(10,2) not null,
+    usoCpu decimal(10,2) not null,
+    tempoAtividade varchar(45) not null,
+    statusRegistro varchar(45),
+    dataRegistro datetime,
+    memoriaTotal decimal(10,2)
 );

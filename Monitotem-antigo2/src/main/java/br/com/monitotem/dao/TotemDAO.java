@@ -211,6 +211,20 @@ public class TotemDAO {
                 } catch (Exception e) {
                     System.out.println("Nao envia" + e.getMessage());
                     System.out.println(e.getMessage());
+                    
+                         
+                    System.out.println(((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1);
+                    System.out.println(pc.getProcessador().getUso().intValue());
+                    System.out.println(pc.getSistema().getTempoDeAtividade().toString());
+                    System.out.println(formatter.format(LocalDateTime.now()));
+                    try {
+                        System.out.println(getIdTotem());
+                    } catch (UnknownHostException ex) {
+                        Logger.getLogger(TotemDAO.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (SQLException ex) {
+                        Logger.getLogger(TotemDAO.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    System.out.println(((pc.getMemoria().getDisponivel() * 100) / pc.getMemoria().getTotal()));
                 }
 
                 try ( PreparedStatement pstm = cnn.prepareStatement(MySql, Statement.RETURN_GENERATED_KEYS)) {

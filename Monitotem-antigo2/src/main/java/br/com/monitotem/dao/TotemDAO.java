@@ -185,7 +185,14 @@ public class TotemDAO {
                     pstm.setString(5, "FUNCIONANDO");
                     pstm.setInt(6, getIdTotem());
                     pstm.setInt(7, (int) ((pc.getMemoria().getDisponivel() * 100) / pc.getMemoria().getTotal()));
-
+                    
+                    System.out.println(((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1);
+                    System.out.println(pc.getProcessador().getUso().intValue());
+                    System.out.println(pc.getSistema().getTempoDeAtividade().toString());
+                    System.out.println(formatter.format(LocalDateTime.now()));
+                    System.out.println(getIdTotem());
+                    System.out.println(((pc.getMemoria().getDisponivel() * 100) / pc.getMemoria().getTotal()));
+                    
                     if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 70) {
                         SlackAPI.postMessage("xoxb-3431609768566-3438312290354-XJY3Bz1jDMI5IH6YUZm7g2dp", "alertas", "Cuidado sua memoria esta em nivel emergencial");
                     }

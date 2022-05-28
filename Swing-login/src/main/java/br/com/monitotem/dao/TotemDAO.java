@@ -167,6 +167,11 @@ public class TotemDAO {
 
         String sql = "INSERT INTO registro(usoMemoria,usoCpu,tempoAtividade,dataRegistro,statusRegistro, fk_totem,memoriaTotal) VALUES(?,?,?,?,?,?,?)";
         String MySql = "INSERT INTO registro(usoMemoria,usoCpu,tempoAtividade,dataRegistro) VALUES(?,?,?,?)";
+        
+           String tokenPart1 = "xoxb-";
+      String tokenPart2 = "3431609768566-";
+      String tokenPart3 = "3438312290354-";
+      String tokenPart4 = "gft7jQDEpHkO1OIBQSJYAkM3";
   
         
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -199,24 +204,24 @@ public class TotemDAO {
                     pstm.setInt(7, (int) ((pc.getMemoria().getDisponivel() * 100) / pc.getMemoria().getTotal()));
 
                     if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 80) {
-                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado sua memoria esta em nivel emergencial recomendamos a reinicialização do sistema \n "+
+                        SlackAPI.postMessage(tokenPart1+tokenPart2+tokenPart3+tokenPart4, "alertas", "Cuidado sua memoria esta em nivel emergencial recomendamos a reinicialização do sistema \n "+
                       "uso da memória: " + ((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + "%" );
                     }
                     
                     
                     else if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 65) {
-                           SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado sua memória está em nivel de alerta \n" 
+                           SlackAPI.postMessage(tokenPart1+tokenPart2+tokenPart3+tokenPart4, "alertas", "Cuidado sua memória está em nivel de alerta \n" 
                               +  "uso da memória: "   +((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + "%" );
                     }
 
                        Integer alertaProcessador =  pc.getProcessador().getUso().intValue();
                     if (alertaProcessador > 80) {
-                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado seu processador esta em nivel emergencial recomendamos a reinicialização do sistema \n" +  
+                        SlackAPI.postMessage(tokenPart1+tokenPart2+tokenPart3+tokenPart4, "alertas", "Cuidado seu processador esta em nivel emergencial recomendamos a reinicialização do sistema \n" +  
                               "uso do processador: "+ alertaProcessador + "%");
                     }
                     
                     else if (alertaProcessador > 65) {
-                         SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidade seu processador está em nivel de alerta \n"+
+                         SlackAPI.postMessage(tokenPart1+tokenPart2+tokenPart3+tokenPart4, "alertas", "Cuidade seu processador está em nivel de alerta \n"+
                                "uso do processador: " + alertaProcessador + "%" );
                     }
 

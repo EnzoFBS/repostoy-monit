@@ -10,7 +10,7 @@ public class TesteSlack {
     
     public static void main(String[] args) throws Exception {
         
-            SlackAPI.postMessage("xoxb-3431609768566-3438312290354-SjIa9U1TQ9sTKVP0frsUU6JB", "usuarios", "Voce logou");
+            SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "usuarios", "Voce logou");
         
         
     }

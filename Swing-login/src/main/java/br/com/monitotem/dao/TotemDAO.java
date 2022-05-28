@@ -167,31 +167,57 @@ public class TotemDAO {
 
         String sql = "INSERT INTO registro(usoMemoria,usoCpu,tempoAtividade,dataRegistro,statusRegistro, fk_totem,memoriaTotal) VALUES(?,?,?,?,?,?,?)";
         String MySql = "INSERT INTO registro(usoMemoria,usoCpu,tempoAtividade,dataRegistro) VALUES(?,?,?,?)";
-
+  
+        
         timer.scheduleAtFixedRate(new TimerTask() {
 
             @Override
             public void run() {
-
-                Looca pc = new Looca();
+                
+                 Looca pc = new Looca();
+               String status = "";
+               
+               if (pc.getProcessador().getUso().intValue() > 80 || ((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 80 ) {
+                    status = "emergencia";
+                }
+                else if (pc.getProcessador().getUso().intValue() > 65 ) {
+                    status = "alerta";
+                }else{
+                    status = "ok";
+                }
+               
 
                 try ( PreparedStatement pstm = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-                    System.out.println("enviando");
+                    System.out.println("enviando dados para o SQL SERVER");
 
                     pstm.setInt(1, (int) ((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1);
                     pstm.setInt(2, pc.getProcessador().getUso().intValue());
                     pstm.setString(3, pc.getSistema().getTempoDeAtividade().toString());
                     pstm.setString(4, formatter.format(LocalDateTime.now()));
-                    pstm.setString(5, "FUNCIONANDO");
+                    pstm.setString(5, status);
                     pstm.setInt(6, getIdTotem());
                     pstm.setInt(7, (int) ((pc.getMemoria().getDisponivel() * 100) / pc.getMemoria().getTotal()));
 
-                    if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 70) {
-                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-XJY3Bz1jDMI5IH6YUZm7g2dp", "alertas", "Cuidado sua memoria esta em nivel emergencial");
+                    if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 80) {
+                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado sua memoria esta em nivel emergencial recomendamos a reinicialização do sistema \n "+
+                      "uso da memória: " + ((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + "%" );
+                    }
+                    
+                    
+                    else if (((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + 1 > 65) {
+                           SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado sua memória está em nivel de alerta \n" 
+                              +  "uso da memória: "   +((pc.getMemoria().getEmUso() * 100) / pc.getMemoria().getTotal()) + "%" );
                     }
 
-                    if (pc.getProcessador().getUso().intValue() > 60) {
-                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-XJY3Bz1jDMI5IH6YUZm7g2dp", "alertas", "Cuidado seu processador esta em nivel emergencial");
+                       Integer alertaProcessador =  pc.getProcessador().getUso().intValue();
+                    if (alertaProcessador > 80) {
+                        SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidado seu processador esta em nivel emergencial recomendamos a reinicialização do sistema \n" +  
+                              "uso do processador: "+ alertaProcessador + "%");
+                    }
+                    
+                    else if (alertaProcessador > 65) {
+                         SlackAPI.postMessage("xoxb-3431609768566-3438312290354-jrJx31OSDXFCxKhVmcUx1NY7", "alertas", "Cuidade seu processador está em nivel de alerta \n"+
+                               "uso do processador: " + alertaProcessador + "%" );
                     }
 
                     pstm.execute();

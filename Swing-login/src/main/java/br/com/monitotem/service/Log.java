@@ -16,7 +16,7 @@ public class Log {
     public void logar(String texto) {
 //        File log = new File("Log.txt");
 
-        File log = new File("Log.txt");
+        File log = new File("Log-Monitotem.txt");
         try {
             if (!log.exists()) {
                 System.out.println("Criei um novo arquivo");

@@ -55,7 +55,7 @@ public class ThreadHardware extends javax.swing.JFrame {
                 txtMemoria.setText(memory.toString());
 //              
             }
-        }, 4, 1000);
+        }, 4, 2000);
     }
 
     private void getProcessosTxt() {
@@ -75,7 +75,7 @@ public class ThreadHardware extends javax.swing.JFrame {
             public void run() {
                 txtProcessador.setText(new Looca().getProcessador().toString());
             }
-        }, 4, 1000);
+        }, 4, 2000);
     }
 
     private void getDiscoTxt() {

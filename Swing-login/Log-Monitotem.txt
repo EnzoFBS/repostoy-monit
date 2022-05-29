@@ -1,1 +1,293 @@
-28/05/2022 15:19:42Login efetuado com sucesso ! 
+-----------Monitotem Log ------------
+
+29/05/2022 13:42:10 OK  O usuário com email de enzo@gmail.com entrou no sistema
+
+29/05/2022 13:42:27 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:42:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:42:48 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:42:59 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:43:10 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:43:21 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:43:32 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:43:43 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:43:52 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:44:00 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:44:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 13:44:18 OK  maquina reiniciada com sucesso
+
+29/05/2022 13:44:18 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:03:58 OK  maquina reiniciada com sucesso
+
+29/05/2022 16:04:06 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:04:15 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:04:25 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:04:34 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:04:43 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:04:52 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:01 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:18 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:29 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:40 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:49 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:05:58 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:07 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:18 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:28 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:48 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:06:59 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:07:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:07:20 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:07:31 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:07:42 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:07:53 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:04 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:14 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:25 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:36 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:47 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:08:57 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:09:08 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:16:50 OK  O usuário com email de enzo@gmail.com entrou no sistema
+
+29/05/2022 16:17:06 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:17:16 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:17:25 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:17:34 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:17:43 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:17:53 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:04 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:15 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:26 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:36 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:47 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:18:58 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:19:08 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:19:19 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:19:30 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:19:40 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:19:51 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:01 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:12 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:23 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:34 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:44 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:20:55 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:05 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:16 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:27 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:48 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:21:59 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:22:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:22:20 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:22:30 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:22:41 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:22:52 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:02 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:13 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:23 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:34 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:44 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:23:55 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:05 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:16 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:27 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:48 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:24:58 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:25:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:25:19 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:25:30 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:25:41 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:25:51 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:02 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:12 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:23 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:33 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:44 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:26:55 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:05 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:16 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:27 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:46 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:27:56 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:28:07 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:28:18 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:28:29 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:28:40 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:28:50 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:01 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:11 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:22 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:33 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:43 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:29:54 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:04 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:15 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:26 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:36 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:47 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:30:57 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:31:08 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:31:19 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:31:29 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:31:40 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:31:51 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:01 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:12 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:23 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:33 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:44 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:32:54 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:05 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:16 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:26 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:37 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:48 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:33:58 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:34:09 OK  enviando dados para o SQLServer Normalmente
+
+29/05/2022 16:34:19 OK  enviando dados para o SQLServer Normalmente

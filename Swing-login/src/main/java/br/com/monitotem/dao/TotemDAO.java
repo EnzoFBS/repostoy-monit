@@ -3,6 +3,7 @@ package br.com.monitotem.dao;
 import br.com.monitotem.entities.Totem;
 import br.com.monitotem.entities.Usuario;
 import br.com.monitotem.service.ConnectionFactorySQL;
+import br.com.monitotem.service.Log;
 import br.com.monitotem.view.ThreadHardware;
 import com.github.britooo.looca.api.core.Looca;
 import java.beans.PropertyVetoException;
@@ -33,6 +34,8 @@ public class TotemDAO {
     public TotemDAO(Connection cnn) {
         this.con = cnn;
     }
+    
+       Log logalert = new Log();
 
     public void salvar(Totem totem, Integer idEmpresa) throws SQLException, UnknownHostException, ClassNotFoundException {
 
@@ -74,12 +77,15 @@ public class TotemDAO {
 
                     pstm2.execute();
                     System.out.println("adicionando maquina");
+                 
+                   logalert.normalizado(" adicionando máquina com o hostname : " + infoMaquina.getHostName());
                     try ( ResultSet rs2 = pstm2.getGeneratedKeys()) {
-                        while (rs2.next()) {
+                        while (rs2.next()) { 
                             totem.setIdTotem(rs2.getInt(1));
                         }
                     }
                 } catch (Exception e) {
+                    logalert.emergencia("falha ao inserir maquina");
                     e.getMessage();
                 }
             } else {
@@ -130,6 +136,7 @@ public class TotemDAO {
                         ex.getMessage();
                     }
                     System.out.println("Deu certo carambaaa");
+                    logalert.normalizado(" maquina reiniciada com sucesso");
                 }
             }
         }, 2, 5000);
@@ -224,6 +231,8 @@ public class TotemDAO {
                          SlackAPI.postMessage(tokenPart1+tokenPart2+tokenPart3+tokenPart4, "alertas", "Cuidade seu processador está em nivel de alerta \n"+
                                "uso do processador: " + alertaProcessador + "%" );
                     }
+                    
+                    logalert.normalizado(" enviando dados para o SQLServer Normalmente");
 
                     pstm.execute();
 
@@ -233,6 +242,9 @@ public class TotemDAO {
                         }
                     }
                 } catch (Exception e) {
+                    
+                    logalert.emergencia(e.getMessage());
+                 
                     System.out.println("Nao envia");
                     System.out.println(e.getMessage());
                 }
@@ -253,6 +265,7 @@ public class TotemDAO {
                         }
                     }
                 } catch (Exception e) {
+                      logalert.emergencia(e.getMessage());
                     System.out.println("Nao envia");
                     System.out.println(e.getMessage());
                 }

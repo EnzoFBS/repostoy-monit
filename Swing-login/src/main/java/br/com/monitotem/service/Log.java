@@ -11,9 +11,18 @@ public class Log {
 
     public Log() {
     }
-
-    String strLocalDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")).toString();
-    public void logar(String texto) {
+    
+    public void emergencia(String texto){
+            logar( " ERRO ", texto);
+    }
+    
+    public void normalizado(String texto){
+            logar(" OK ", texto);
+    }
+    
+  
+  
+    public void logar(String tipo,String texto) {
 //        File log = new File("Log.txt");
 
         File log = new File("Log-Monitotem.txt");
@@ -27,8 +36,14 @@ public class Log {
             FileWriter fileWriter = new FileWriter(log, true);
 
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(strLocalDate + texto + "\n" );
+            if (log.length() == 0) {
+                bufferedWriter.write("-----------Monitotem Log ------------");
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.newLine();
+            bufferedWriter.write( LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")).toString()  + tipo + texto + "\n" );
             bufferedWriter.close();
+            fileWriter.close();
 
         } catch (IOException e) {
             e.printStackTrace();

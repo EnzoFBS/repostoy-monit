@@ -182,6 +182,7 @@ public class Cadastro extends javax.swing.JFrame {
         UserDao userDao = new UserDao();
 
         InetAddress inetAddress;
+               Log alertaLog = new Log();
         Slack slack = new Slack();
 
         try {
@@ -202,9 +203,9 @@ public class Cadastro extends javax.swing.JFrame {
                 }
 
                 System.out.println("Login efetuado com sucesso !");
-           Log alertaLog = new Log();
+    
         
-           alertaLog.logar("Login efetuado com sucesso ! ");
+                    alertaLog.normalizado(" O usuário com email de " + emailUser + " entrou no sistema" );
 
 
                 try {
@@ -234,6 +235,8 @@ public class Cadastro extends javax.swing.JFrame {
                 txtResultado.setForeground(Color.red);
                 txtResultado.setText("Usuário ou senha inválido ...");
                 System.out.println("Login inválido tente novamnte");
+                alertaLog.emergencia(" Falha ao realizar login do email "+emailUser );
+               
             }
         } catch (SQLException ex) {
             ex.getMessage();

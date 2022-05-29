@@ -1,5 +1,4 @@
 #!/bin/bash
-
 getent passwd urubu100
 if [ $? -eq 0 ]
 then echo \“Usuario ja existente\”
@@ -46,7 +45,6 @@ fi
 fi
 clear
 
-
 echo \"Para finalizar a instalacao, sera feito o download do nosso app Monisystem e um banco de dados local, prosseguir com a instalacao? S/n \"
 read inst2
 if [ \"$inst2\" == \"s\" ]
@@ -61,10 +59,6 @@ sudo docker build -t jar_monitotem:1.0 .
 sudo docker build -t banco_img/banco-mysql:1.0 .
 sudo docker run -d -p 3306:3306 --name java-monitotem jar_monitotem:1.0
 
-
-
 sudo docker ps -a
 
-
 fi
-

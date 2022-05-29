@@ -13,7 +13,7 @@ public class TestLog {
         
         Log presunto = new Log();
         
-        presunto.logar("Deu certo!!");
+           presunto.logar(" Perigo ", "O log esta funcionando");
     }
     
     
